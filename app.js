@@ -10,6 +10,9 @@ function romanNumeral (n) {
   if (n < 50) {
     return 'X' + romanNumeral(n - 10)
   }
+  if (n < 100) {
+    return 'L' + romanNumeral(n - 50)
+  }
 }
 
 function repeat (str, count) {
