@@ -22,6 +22,13 @@ describe('roman numerals app', () => {
     [51, 'LI'],
     [54, 'LIIII'],
     [94, 'LXXXXIIII'],
+    [100, 'C'],
+    [101, 'CI'],
+    [111, 'CXI'],
+    [146, 'CXXXXVI'],
+    [350, 'CCCL'],
+    [500, 'D'],
+    [999, 'DCCCCLXXXXVIIII'],
   ]
 
   data.forEach(([input, expected]) => {

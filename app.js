@@ -13,6 +13,12 @@ function romanNumeral (n) {
   if (n < 100) {
     return 'L' + romanNumeral(n - 50)
   }
+  if (n < 500) {
+    return 'C' + romanNumeral(n - 100)
+  }
+  if (n < 1000) {
+    return 'D' + romanNumeral(n - 500)
+  }
 }
 
 function repeat (str, count) {
