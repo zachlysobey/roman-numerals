@@ -11,9 +11,7 @@ const symbols = [
 ]
 
 function romanNumeral (n) {
-  if (n === 0) {
-    return ''
-  }
+  if (n === 0) return ''
   for (let i = 0; i < symbols.length; i++) {
     const [sym, val] = symbols[i]
     const nextVal = symbols[i + 1] ? symbols[i + 1][1] : Infinity

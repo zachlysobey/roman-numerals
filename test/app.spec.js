@@ -1,11 +1,9 @@
 const {describe, it} = require('mocha')
 const {expect} = require('chai')
-
 const romanNumeral = require('../app.js')
 
 describe('roman numerals app', () => {
-
-  const data = [
+  [
     [1, 'I'],
     [2, 'II'],
     [5, 'V'],
@@ -33,13 +31,10 @@ describe('roman numerals app', () => {
     [3677, 'MMMDCLXXVII'],
     [10000, 'MMMMMMMMMM'],
   ]
-
-  data.forEach(([input, expected]) => {
-    it(`romanNumeral(${input}) => "${expected}"`, () => {
-      const result = romanNumeral(input)
-      expect(result).to.equal(expected)
-    })
-  })
-
+  .forEach(([input, expected]) =>
+    it(`romanNumeral(${input}) => "${expected}"`, () =>
+      expect(romanNumeral(input)).to.equal(expected)
+    )
+  )
 })
 
