@@ -5,12 +5,17 @@ const romanNumeral = require('../app.js')
 
 describe('roman numerals app', () => {
 
-  it('is a function', () => {
-    expect(romanNumeral).to.be.a('function')
-  })
+  const data = [
+    [1, 'I'],
+    [2, 'II'],
+    [5, 'V'],
+  ]
 
-  it('returns "I"', () => {
-    expect(romanNumeral(1)).to.equal('I')
+  data.forEach(([input, expected]) => {
+    it(`returns "${expected}" for ${input}`, () => {
+      const result = romanNumeral(input)
+      expect(result).to.equal(expected)
+    })
   })
 
 })
