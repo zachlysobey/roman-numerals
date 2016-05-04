@@ -1,5 +1,3 @@
-module.exports = romanNumeral
-
 const symbols = [
   ['I', 1],
   ['V', 5],
@@ -10,7 +8,7 @@ const symbols = [
   ['M', 1000],
 ]
 
-function romanNumeral (n) {
+module.exports = function romanNumeral (n) {
   if (n === 0) return ''
   for (let i = 0; i < symbols.length; i++) {
     const [sym, val] = symbols[i]
