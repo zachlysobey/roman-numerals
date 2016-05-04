@@ -11,6 +11,10 @@ describe('roman numerals app', () => {
     [5, 'V'],
     [6, 'VI'],
     [9, 'VIIII'],
+    [10, 'X'],
+    [12, 'XII'],
+    [15, 'XV'],
+    [19, 'XVIIII'],
   ]
 
   data.forEach(([input, expected]) => {

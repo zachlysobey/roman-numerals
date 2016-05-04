@@ -4,7 +4,12 @@ function romanNumeral (n) {
   if (n < 5) {
     return repeat('I', n)
   }
-  return 'V' + romanNumeral(n - 5)
+  if (n < 10) {
+    return 'V' + romanNumeral(n - 5)
+  }
+  if (n < 50) {
+    return 'X' + romanNumeral(n - 10)
+  }
 }
 
 function repeat (str, count) {
