@@ -35,7 +35,7 @@ describe('roman numerals app', () => {
   ]
 
   data.forEach(([input, expected]) => {
-    it(`returns "${expected}" for ${input}`, () => {
+    it(`romanNumeral(${input}) => "${expected}"`, () => {
       const result = romanNumeral(input)
       expect(result).to.equal(expected)
     })
