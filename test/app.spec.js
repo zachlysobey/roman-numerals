@@ -9,6 +9,8 @@ describe('roman numerals app', () => {
     [1, 'I'],
     [2, 'II'],
     [5, 'V'],
+    [6, 'VI'],
+    [9, 'VIIII'],
   ]
 
   data.forEach(([input, expected]) => {

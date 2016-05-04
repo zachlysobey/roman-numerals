@@ -1,11 +1,16 @@
 module.exports = romanNumeral
 
 function romanNumeral (n) {
-  if (n === 5) {
-    return 'V'
+  if (n < 5) {
+    return repeat('I', n)
   }
-  if (n > 1) {
-    return 'II'
+  return 'V' + romanNumeral(n - 5)
+}
+
+function repeat (str, count) {
+  let result = ''
+  for (let i = 0; i < count; i++) {
+    result += str
   }
-  return 'I'
+  return result
 }
