@@ -29,6 +29,9 @@ describe('roman numerals app', () => {
     [350, 'CCCL'],
     [500, 'D'],
     [999, 'DCCCCLXXXXVIIII'],
+    [1000, 'M'],
+    [3677, 'MMMDCLXXVII'],
+    [10000, 'MMMMMMMMMM'],
   ]
 
   data.forEach(([input, expected]) => {
